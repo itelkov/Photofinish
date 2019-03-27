@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 import org.springframework.data.redis.core.index.Indexed;
+import ru.selket.photofinish.Application;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash(value = "${spring.redis.repo.api.log}", timeToLive = 14 * 24 * 3600 * 1000)
+@RedisHash(timeToLive = 14 * 24 * 3600 * 1000)
 public class ApiLog implements Serializable {
 
     @Id

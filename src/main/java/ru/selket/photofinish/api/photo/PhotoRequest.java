@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash("${spring.redis.repo.api.photo.request}")
+@RedisHash
 public class PhotoRequest implements Serializable {
 
     @Id

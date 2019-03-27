@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash("${spring.redis.repo.telegram.user}")
+@RedisHash
 public class TelegramUser implements Serializable {
 
     @Id

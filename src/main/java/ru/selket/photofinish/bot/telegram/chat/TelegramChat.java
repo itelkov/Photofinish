@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash(value = "${spring.redis.repo.telegram.chat}", timeToLive = 3600000L)
+@RedisHash(timeToLive = 3600000L)
 public class TelegramChat implements Serializable {
 
     @Id

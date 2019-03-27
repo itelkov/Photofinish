@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import ru.selket.photofinish.Environment;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,7 +22,7 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 public class CommonConfig {
 
-
+    public static final String ENV = Environment.getProfile();
 
     @Primary
     @Bean

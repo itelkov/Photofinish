@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash(value = "${spring.redis.repo.facebook.photo.image.addNotice}", timeToLive = 7 * 24 * 3600 * 1000)
+@RedisHash(timeToLive = 7 * 24 * 3600 * 1000)
 public class FacebookPhotoImageNotice implements Serializable {
 
     @Id

@@ -21,6 +21,7 @@ import ru.selket.photofinish.bot.telegram.TelegramBot;
 public class Application {
 
     public static ApplicationContext applicationContext;
+
     @Value("${telegram.proxy.host}")
     private String proxyHost;
     @Value("${telegram.proxy.port}")

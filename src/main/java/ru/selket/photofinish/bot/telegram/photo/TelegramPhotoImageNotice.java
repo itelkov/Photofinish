@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash(value = "${spring.redis.repo.telegram.photo.image.addNotice}", timeToLive = 7 * 24 * 3600 * 1000)
+@RedisHash(timeToLive = 7 * 24 * 3600 * 1000)
 public class TelegramPhotoImageNotice implements Serializable {
 
     @Id

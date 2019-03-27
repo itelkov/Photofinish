@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RedisHash("${spring.redis.repo.api.user}")
+@RedisHash
 public class User implements Serializable {
 
     @Id
