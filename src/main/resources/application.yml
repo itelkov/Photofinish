@@ -9,6 +9,7 @@ server:
 logging:
   level:
     root: INFO
+    me.ramswaroop: DEBUG
   file: /var/app/photo-finish/logs/dev.log
 #    config:
 
@@ -125,6 +126,20 @@ telegram:
       name: Photofinishtestbot
       token: 766364951:AAFWDakmtxcUOHak5qJqeSHBQqw4ILtPkOo
 
+# slack integrations
+slackApi: https://slack.com/api
+slackBotToken: <paste your slack bot token>
+slashCommandToken: <paste your slash command token>
+# replace the below url with your slack webhook url
+slackIncomingWebhookUrl: https://slack.com
+
+# fb bot
+fbGraphApi: https://graph.facebook.com/v3.2
+fbBotToken: fb_token_for_jbot
+fbPageAccessToken: <paste your page access token>
+
+
+
 ---
 
 # -------------------------------
@@ -160,9 +175,8 @@ server:
   port: 9001
 
 logging:
-  level:
-    root: info
   file: /var/app/photo-finish/logs/prod.log
+
 
 api:
   host: finish.photo

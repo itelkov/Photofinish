@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import org.springframework.web.client.RestTemplate;
 import ru.selket.photofinish.Environment;
 
 import java.time.LocalDateTime;
@@ -23,6 +24,11 @@ import java.time.format.DateTimeFormatter;
 public class CommonConfig {
 
     public static final String ENV = Environment.getProfile();
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
     @Primary
     @Bean
